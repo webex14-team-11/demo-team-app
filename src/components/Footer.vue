@@ -2,7 +2,7 @@
   <footer class="footer">
     <div>
       This Application is made by
-      <span class="names">角本和史, ○○○ and ○○○</span>.
+      <span class="names">Kazufumi Sumimoto, Shota Urano and Ako Tachi </span>.
     </div>
     <small
       >The Application is created as a part of the GeekSalon WebExpert
