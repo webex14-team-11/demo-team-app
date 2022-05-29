@@ -4,11 +4,6 @@
     <h2>Q. {{ quiz.text }}</h2>
     <img class="quiz-image" src="@/assets/Ganymede.jpg" alt="クイズタイトル" />
     <div class="container">
-      <!--<button v-on:click="choice1">
-        <div v-for="choice in choices" v-bind:key="choice.id">
-          {{ choices.text }}
-        </div>
-      </button>-->
       <button
         v-for="(choice, i) in quiz.choices"
         v-bind:key="i"
@@ -16,11 +11,6 @@
       >
         {{ choice.text }}
       </button>
-      <!--<button v-on:click="choice3">
-        <div v-for="choice in choices" v-bind:key="choice.id">
-          {{ choices.text }}
-        </div>
-      </button>-->
     </div>
     <div>{{ feedback }}</div>
   </div>
@@ -65,15 +55,10 @@ export default {
       }
     },
   },
-  computed: {
-    quizImagePath() {
-      return "@/assets/Maruoka.png"
-    },
-  },
 }
 </script>
 
-<style>
+<style scoped>
 .app {
   display: flex;
   width: 100%;
