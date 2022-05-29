@@ -2,11 +2,7 @@
   <h1>Vue クイズ</h1>
   <div class="app">
     <h2>Q. {{ quiz.text }}</h2>
-    <img
-      class="quiz-image"
-      src="@/assets/Ganymede.jpg/300x300"
-      alt="クイズタイトル"
-    />
+    <img class="quiz-image" src="@/assets/Ganymede.jpg" alt="クイズタイトル" />
     <div class="container">
       <!--<button v-on:click="choice1">
         <div v-for="choice in choices" v-bind:key="choice.id">
